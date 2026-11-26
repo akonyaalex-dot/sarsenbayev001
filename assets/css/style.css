@@ -28,7 +28,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   color: var(--text);
   background:
     radial-gradient(1100px 700px at 80% -10%, rgba(254, 197, 12, 0.10), transparent 60%),
@@ -116,9 +116,9 @@ main { position: relative; z-index: 1; }
   background: rgba(254, 197, 12, 0.06);
 }
 .hero-title {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-weight: 700;
-  font-size: clamp(1.7rem, 4.6vw, 3.2rem);
+  font-size: clamp(1.55rem, 4.1vw, 2.9rem);
   line-height: 1.12;
   margin: 0 auto 18px;
   max-width: 16ch;
@@ -127,6 +127,14 @@ main { position: relative; z-index: 1; }
   background-clip: text;
   color: transparent;
   text-shadow: 0 0 40px rgba(254, 197, 12, 0.12);
+}
+.hero-by {
+  display: block;
+  font-size: .5em;
+  font-weight: 600;
+  color: var(--gold-400);
+  letter-spacing: .04em;
+  margin-top: .35em;
 }
 .subtitle {
   font-size: clamp(1.05rem, 2.4vw, 1.4rem);
@@ -151,7 +159,7 @@ main { position: relative; z-index: 1; }
 }
 .stat { display: flex; flex-direction: column; align-items: center; }
 .stat-num {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-weight: 700;
   font-size: clamp(1.6rem, 3.4vw, 2.3rem);
   color: var(--gold-500);
@@ -179,7 +187,7 @@ main { position: relative; z-index: 1; }
 .games { max-width: var(--maxw); margin: 0 auto; padding: clamp(20px, 4vw, 40px) clamp(16px, 4vw, 40px); }
 .section-head { text-align: center; margin-bottom: 38px; }
 .section-title {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-weight: 700;
   font-size: clamp(1.4rem, 3.2vw, 2.1rem);
   margin: 0 0 10px;
@@ -262,7 +270,7 @@ main { position: relative; z-index: 1; }
 .badge--live { color: #062; background: #b6f5c8; border-color: #6fe39a; }
 
 .card-title {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-weight: 700;
   font-size: 1.18rem;
   margin: 0 0 10px;
@@ -280,7 +288,7 @@ main { position: relative; z-index: 1; }
   gap: 10px;
   border: none;
   cursor: pointer;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: .04em;
@@ -358,7 +366,7 @@ main { position: relative; z-index: 1; }
   border-bottom: 1px solid var(--ring);
   background: linear-gradient(180deg, rgba(18,36,80,.7), rgba(10,21,48,.7));
 }
-.modal-title { font-family: "Lora", Georgia, "Times New Roman", serif; font-weight: 700; color: #fff; font-size: 1.02rem; }
+.modal-title { font-family: "Noto Serif", Georgia, "Times New Roman", serif; font-weight: 700; color: #fff; font-size: 1.02rem; }
 .modal-head-actions { display: flex; align-items: center; gap: 10px; }
 .modal-newtab {
   color: var(--gold-400); text-decoration: none; font-weight: 700; font-size: .9rem;
@@ -405,4 +413,9 @@ main { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
   .card { opacity: 1; transform: none; }
+}
+
+@media (max-width: 560px) {
+  .brand-text { font-size: .76rem; }
+  .hero-by { font-size: .46em; }
 }
